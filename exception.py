@@ -7,7 +7,7 @@ def custom_message(error_msg,error_detail:sys):
     _,_,error_tb = error_detail.exc_info()
     filename = error_tb.tb_frame.f_code.co_filename
     lineno = error_tb.tb_lineno
-    craft_message = f"(Error occured in [{filename}], in the no [{lineno}] and the error msg[{error_msg}] !!!!!)"
+    craft_message = f"(Error occured in [{filename}], in the line no [{lineno}] and the error msg[{error_msg}] !!!!!)"
     return craft_message
 
 
